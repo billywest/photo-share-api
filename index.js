@@ -23,7 +23,7 @@ async function start() {
       Mongo DB Host not found!
       please add DB_HOST environment variable to .env file
       exiting...
-       
+      
     `);
     process.exit(1);
   }

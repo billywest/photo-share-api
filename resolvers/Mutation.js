@@ -64,8 +64,6 @@ module.exports = {
 
     var { results } = await fetch(randomUserApi).then((res) => res.json());
 
-    console.log(results);
-
     var users = results.map((r) => ({
       githubLogin: r.login.username,
       name: `${r.name.first} ${r.name.last}`,
